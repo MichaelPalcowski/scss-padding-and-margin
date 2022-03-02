@@ -1,1 +1,115 @@
-stuff
+// Custom Padding and Margin Classes
+
+// Set the pixel values that you want the function to loop through. 
+@for $i from 1 through 300 {
+
+$size: #{$i};
+    //Padding
+    .p-#{$size} {
+        padding: #{$size}px;
+    }
+    .px-#{$size} {
+        padding-left: #{$size}px;
+        padding-right: #{$size}px;
+    }
+    .py-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+    .pt-#{$size} {
+        padding-top: #{$size}px;
+    }
+    .pr-#{$size} {
+        padding-right: #{$size}px;
+    }
+    .pb-#{$size} {
+        padding-bottom: #{$size}px;
+    }
+    .pl-#{$size} {
+        padding-left: #{$size}px;
+    }
+    // Margin
+    .m-#{$size} {
+        padding: #{$size}px;
+    }
+    .mx-#{$size} {
+        margin-left: #{$size}px;
+        margin-right: #{$size}px;
+    }
+    .my-#{$size} {
+        margin-top: #{$size}px;
+        margin-bottom: #{$size}px;
+    }
+    .mt-#{$size} {
+        margin-top: #{$size}px;
+    }
+    .mr-#{$size} {
+        margin-right: #{$size}px;
+    }
+    .mb-#{$size} {
+        margin-bottom: #{$size}px;
+    }
+    .ml-#{$size} {
+        margin-left: #{$size}px;
+    }
+}
+
+//This will set the break points at which the class is active.  These values are based on Bootstrap 4.0 sizes
+
+$breaks : ("sm": 576px, "md": 768px, "lg": 992px,"xl": 1200px);
+
+@each $break, $value in $breaks {
+    @media only screen and (min-width: #{$value})  {
+        @for $i from 1 through 300 {
+
+        $size: #{$i};
+
+            .p-#{$break}-#{$size} {
+                padding: #{$size}px;
+            }
+            .px-#{$break}-#{$size} {
+                padding-left: #{$size}px;
+                padding-right: #{$size}px;
+            }
+            .py-#{$break}-#{$size} {
+                padding-top: #{$size}px;
+                padding-bottom: #{$size}px;
+            }
+            .pt-#{$break}-#{$size} {
+                padding-top: #{$size}px;
+            }
+            .pr-#{$break}-#{$size} {
+                padding-right: #{$size}px;
+            }
+            .pb-#{$break}-#{$size} {
+                padding-bottom: #{$size}px;
+            }
+            .pl-#{$break}-#{$size} {
+                padding-left: #{$size}px;
+            }
+            .m-#{$break}-#{$size} {
+                margin: #{$size}px;
+            }
+            .mx-#{$break}-#{$size} {
+                margin-left: #{$size}px;
+                margin-right: #{$size}px;
+            }
+            .my-#{$break}-#{$size} {
+                margin-top: #{$size}px;
+                margin-bottom: #{$size}px;
+            }
+            .mt-#{$break}-#{$size} {
+                margin-top: #{$size}px;
+            }
+            .mr-#{$break}-#{$size} {
+                margin-right: #{$size}px;
+            }
+            .mb-#{$break}-#{$size} {
+                margin-bottom: #{$size}px;
+            }
+            .ml-#{$break}-#{$size} {
+                margin-left: #{$size}px;
+            }
+        }
+    }
+}
