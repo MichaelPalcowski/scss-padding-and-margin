@@ -6,22 +6,22 @@ Format :
 Classes are set using the format of {property}-{sides}-{size}
 
 Properties for {property}: 
-m - for classes that set margin
-p - for classes that set padding
+<p>m - for classes that set margin</p>
+<p>p - for classes that set padding</p>
 
 Sides for {sides}: 
 
-t - for classes that set margin/padding-top
-r - for classes that set margin/padding-right
-b - for classes that set margin/padding-bottom
-l - for classes that set margin/padding-left
-t - for classes that set margin/padding-top
-blank - for classes that set margin/padding on all 4 sides of {property}
+<p>t - for classes that set margin/padding-top</p>
+<p>r - for classes that set margin/padding-right</p>
+<p>b - for classes that set margin/padding-bottom</p>
+<p>l - for classes that set margin/padding-left</p>
+<p>t - for classes that set margin/padding-top</p>
+<p>blank - for classes that set margin/padding on all 4 sides of {property}</p>
 
 Size for {size}:
 
-{size} is set using a numerical value between 1 and 300.  The range can be adjusted by changing the second value in the @for rule.
-Setting {size} will add that pixel value of margin/padding on the {sides} specificed in the class. 
+<p>{size} is set using a numerical value between 1 and 300.  The range can be adjusted by changing the second value in the @for rule.</p>
+<p>Setting {size} will add that pixel value of margin/padding on the {sides} specificed in the class. </p>
 
 
 Reponsive 
