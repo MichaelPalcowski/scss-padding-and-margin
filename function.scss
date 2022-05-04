@@ -4,7 +4,9 @@
 @for $i from 1 through 300 {
 
 $size: #{$i};
-    //Padding
+$percentage: 1%*$i;
+
+    //Padding Pixel Value
     .p-#{$size} {
         padding: #{$size}px;
     }
@@ -28,7 +30,7 @@ $size: #{$i};
     .pl-#{$size} {
         padding-left: #{$size}px;
     }
-    // Margin
+    // Margin Pixel Value
     .m-#{$size} {
         padding: #{$size}px;
     }
@@ -52,6 +54,54 @@ $size: #{$i};
     .ml-#{$size} {
         margin-left: #{$size}px;
     }
+    //Padding Percentage
+    .p-#{$size}p {
+        padding: $percentage;
+    }
+    .px-#{$size}p {
+        padding-left: $percentage;
+        padding-right: $percentage;
+    }
+    .py-#{$size}p {
+        padding-top: $percentage;
+        padding-bottom: $percentage;
+    }
+    .pt-#{$size}p {
+        padding-top: $percentage;
+    }
+    .pr-#{$size}p {
+        padding-right: $percentage;
+    }
+    .pb-#{$size}p {
+        padding-bottom: $percentage;
+    }
+    .pl-#{$size}p {
+        padding-left: $percentage;
+    }
+    // Margin Percentage
+    .m-#{$size}p {
+        padding: $percentage;
+    }
+    .mx-#{$size}p {
+        margin-left: $percentage;
+        margin-right: $percentage;
+    }
+    .my-#{$size}p {
+        margin-top: $percentage;
+        margin-bottom: $percentage;
+    }
+    .mt-#{$size}p {
+        margin-top: $percentage;
+    }
+    .mr-#{$size}p {
+        margin-right: $percentage;
+    }
+    .mb-#{$size}p {
+        margin-bottom: $percentage;
+    }
+    .ml-#{$size}p {
+        margin-left: $percentage;
+    }
 }
 
 //This will set the break points at which the class is active.  These values are based on Bootstrap 4.0 sizes
@@ -63,7 +113,9 @@ $breaks : ("sm": 576px, "md": 768px, "lg": 992px,"xl": 1200px);
         @for $i from 1 through 300 {
 
         $size: #{$i};
+        $percentage: 1%*$i;
 
+            //Padding Pixel Value
             .p-#{$break}-#{$size} {
                 padding: #{$size}px;
             }
@@ -87,6 +139,31 @@ $breaks : ("sm": 576px, "md": 768px, "lg": 992px,"xl": 1200px);
             .pl-#{$break}-#{$size} {
                 padding-left: #{$size}px;
             }
+            //Padding Percentage
+            .p-#{$break}-#{$size}p {
+                padding: $percentage;
+            }
+            .px-#{$break}-#{$size}p {
+                padding-left: $percentage;
+                padding-right: $percentage;
+            }
+            .py-#{$break}-#{$size}p {
+                padding-top: $percentage;
+                padding-bottom: $percentage;
+            }
+            .pt-#{$break}-#{$size}p {
+                padding-top: $percentage;
+            }
+            .pr-#{$break}-#{$size}p {
+                padding-right: $percentage;
+            }
+            .pb-#{$break}-#{$size}p {
+                padding-bottom: $percentage;
+            }
+            .pl-#{$break}-#{$size}p {
+                padding-left: $percentage;
+            }
+            //Margin Pixel Value
             .m-#{$break}-#{$size} {
                 margin: #{$size}px;
             }
@@ -109,6 +186,30 @@ $breaks : ("sm": 576px, "md": 768px, "lg": 992px,"xl": 1200px);
             }
             .ml-#{$break}-#{$size} {
                 margin-left: #{$size}px;
+            }
+            //Margin Percentage
+            .m-#{$break}-#{$size}p {
+                margin: $percentage;
+            }
+            .mx-#{$break}-#{$size}p {
+                margin-left: $percentage;
+                margin-right: $percentage;
+            }
+            .my-#{$break}-#{$size}p {
+                margin-top: $percentage;
+                margin-bottom: $percentage;
+            }
+            .mt-#{$break}-#{$size}p {
+                margin-top: $percentage;
+            }
+            .mr-#{$break}-#{$size}p {
+                margin-right: $percentage;
+            }
+            .mb-#{$break}-#{$size}p {
+                margin-bottom: $percentage;
+            }
+            .ml-#{$break}-#{$size}p {
+                margin-left: $percentage;
             }
         }
     }
